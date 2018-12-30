@@ -1,0 +1,20 @@
+// SASS overrides
+
+// Theme colors
+//
+$red:               #d9534f;
+$usc_gold:          #ffc803;
+$bright_turquoise:  #0cebdc;
+$spiro_disco_ball:  #23c9ff;
+$pale_violet:       #a18fff;
+$vivid_cerise:      #d9167e;
+
+$primary:           $spiro_disco_ball;
+$secondary:         $pale_violet; 
+$inverse:           $usc_gold;
+
+// Theme fonts
+//$font-family-sans-serif: cursive;
+
+// Initialize the Open edX Bootstrap theme
+@import 'edx-bootstrap/sass/open-edx/theme';
