@@ -1,0 +1,42 @@
+// Theme colors
+//
+$usc_gold: #ffc803;
+$bright_turquoise: #0cebdc;
+$spiro_disco_ball: #23c9ff;
+$pale_violet: #a18fff;
+$vivid_cerise: #d9167e;
+$fern: #61ce70;
+
+.global-header {
+  border-bottom: 0px solid $vivid_cerise;
+  box-shadow: inset 0 0px 0px 0 rgba(0, 0, 0, 0.1);
+
+  .course-search .search-button {
+    color: $bright_turquoise;
+    background: $vivid_cerise;
+  }
+}
+
+.home > header {
+  background: url("../images/Educate-Logo-Banner-Full-Size.png");
+  background-size: cover;
+  background-position: 50%;
+
+  .title {
+    background: transparent;
+    box-shadow: none;
+    margin-left: 0;
+
+    > .heading-group h1 {
+      color: $vivid_cerise;
+    }
+  }
+}
+
+.login-register .action-primary {
+  background: $vivid_cerise;
+}
+
+.courses-container .courses .course {
+  border-bottom: 3px solid $bright_turquoise;
+}
