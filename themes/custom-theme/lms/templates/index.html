@@ -14,18 +14,40 @@ from openedx.core.djangolib.markup import HTML, Text
 <main id="main" aria-label="Content" tabindex="-1">
   <section class="home">
     <header>
-      <div class="outer-wrapper">
+      <div class="header-row">
+        <div class="header-col text-wrapper font-blue">
+          <h1> <span>Bringing</span>
+            <div class="slidingVertical">
+              <span class="font-cerise">Industry 4.0</span>
+              <span class="font-cerise">Automotive</span>
+              <span class="font-cerise">Aerospace</span>
+              <span class="font-cerise">Rail</span>
+              <span class="font-cerise">Healthcare</span>
+              <span class="font-cerise">Manufacturing</span>
+            </div>
+            <span> to Life in Education</span>
+          </h1>
+          <h3>To ensure students learn skills to thrive in the future of work and businesses have sustainable talent pipelines.</h3>
+        </div>
+        <div class="header-col image-wrapper">
+          <div class="header-image">
+            <img class="" src="${static.url("custom-theme/images/Bridging-the-gap0.png")}" alt="${_(" {platform_name} Home Page").format(platform_name=static.get_platform_name())}" />
+          </div>
+        </div>
+      </div>
+      <!-- <div class="outer-wrapper">
         <div class="title">
           <div class="heading-group">
             <%include file="${static.get_template_path(relative_path='index_overlay.html')}"/>
             </div>
           </div>
-
           <%include file="index_promo_video.html" />
-        </div>
+         
+        </div> -->
 
-      </header>
-      <%include file="${courses_list}" />
+    </header>
+
+    <%include file="${courses_list}" />
 
     </section>
 </main>
@@ -54,9 +76,4 @@ from openedx.core.djangolib.markup import HTML, Text
 <script type="text/javascript">
   $(window).load(function () { $('#signup_action').trigger("click"); });
 </script>
-% endif
-% if not uses_bootstrap:
-  <!-- McDaniel Oct-2018: add the Bootstrap javascript library, unless it's already included from webpack -->
-  ## xss-lint: disable=mako-invalid-js-filter
-  <script type="text/javascript" src="${static.url('common/js/vendor/bootstrap.bundle.js')}"></script>
 % endif

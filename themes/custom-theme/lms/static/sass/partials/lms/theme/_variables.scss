@@ -9,18 +9,28 @@ $spiro_disco_ball: #23c9ff;
 $pale_violet: #a18fff;
 $vivid_cerise: #d9167e;
 $fern: #61ce70;
-
+$white: #ffffff;
+$blue: #022260;
 $primary: $vivid_cerise;
-$secondary: $fern;
+$secondary: $bright_turquoise;
 
-$component-active-bg: $fern;
+$component-active-bg: $pale_violet;
 $border-color: $usc_gold;
 
 // Theme fonts
-$font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+$font-family-sans-serif: 'Quicksand', sans-serif !important;
 $font-weight-normal: 600;
 
 $indigo: $vivid_cerise;
 
+.font-cerise{
+    color: $vivid_cerise !important;
+}
+.font-blue{
+    color: $blue;
+}
+.d-none{
+    display: none;
+}
 // Initialize the Open edX Bootstrap theme
 @import "edx-bootstrap/sass/open-edx/theme";
