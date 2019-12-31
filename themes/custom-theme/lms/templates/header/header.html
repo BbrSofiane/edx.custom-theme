@@ -76,11 +76,16 @@ footer = get_footer(is_secure=is_secure)
         </div>
         <nav class="nav-links">
             <div class ="main">
+                <!--
                 % for item_num, link in enumerate(footer['navigation_links'], start=1):
                 <div class="mobile-nav-item hidden-mobile nav-item nav-tab">
                     <a class="tab-nav-link" href="${link['url']}">${link['title']}</a>
                 </div>
-                % endfor
+                % endfor 
+                -->
+                <div class="mobile-nav-item hidden-mobile nav-item nav-tab">
+                    <a class="tab-nav-link" href="https://diceytech.co.uk/3ducate/">About us</a>
+                </div>
             </div>
         </nav>
         % if user.is_authenticated:
