@@ -15,16 +15,16 @@
     <footer>
       <div class="row">
         <div class="col-md-9">
-          <nav class="navbar site-nav navbar-expand-sm" aria-label="${_('About')}">
+          <!-- nav class="navbar site-nav navbar-expand-sm" aria-label="${_('About')}">
             <ul class="navbar-nav">
               % for item_num, link in enumerate(footer['social_links'], start=1):
                 <li class="nav-item">
-                  <i class="${link['icon-class']}"></i>
+                  <i class="fab ${link['icon-class']} fa-2x"></i>
                   <a class="nav-link" href="${link['url']}">${link['title']}</a>
                 </li>
               % endfor
             </ul>
-          </nav>
+          </nav-->
 
           <div class="wrapper-logo">
             <p>
@@ -51,7 +51,7 @@
               % endif
           </p>
 
-          <nav class="navbar legal-nav navbar-expand-sm" aria-label="${_('Legal')}">
+          <!-- nav class="navbar legal-nav navbar-expand-sm" aria-label="${_('Legal')}">
             <ul class="navbar-nav">
               % for item_num, link in enumerate(footer['legal_links'], start=1):
                 <li class="nav-item">
@@ -62,7 +62,7 @@
                 <a class="nav-link" href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a>
               </li>
             </ul>
-          </nav>
+          </nav-->
         </div>
         <div class="col-md-3">
           ## Please leave this link and use one of the logos provided
@@ -135,7 +135,7 @@
               % endif
           </p>
 
-        <nav class="nav-legal" aria-label="${_('Legal')}">
+        <!--nav class="nav-legal" aria-label="${_('Legal')}">
           <ul>
             % for item_num, link in enumerate(footer['legal_links'], start=1):
               <li class="nav-legal-0${item_num}">
@@ -144,7 +144,7 @@
             % endfor
             <li><a href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a></li>
           </ul>
-        </nav>
+        </nav-->
       </div>
 
       ## Please leave this link and use one of the logos provided
