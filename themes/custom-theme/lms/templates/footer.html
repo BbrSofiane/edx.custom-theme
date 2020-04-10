@@ -63,7 +63,7 @@
               </li>
             </ul>
           </nav>
-        </div>
+        </div-->
         <div class="col-md-3">
           ## Please leave this link and use one of the logos provided
           ## The OpenEdX link may be hidden when this view is served
@@ -93,7 +93,7 @@
       % endif
     >
 
-    <!-- <div class="wrapper-logo">
+    <div class="wrapper-logo">
       <p>
         <a href="/">
           ## The default logo is a placeholder.
@@ -106,9 +106,9 @@
           <img alt="${_('organization logo')}"src="${static.url("custom-theme/images/logo.png")}">
         </a>
       </p>
-    </div> -->
+    </div>
       
-        <nav class="footer-nav social-icons" aria-label="${_('About')}">
+        <!--nav class="footer-nav social-icons" aria-label="${_('About')}">
           <ol>
               % for item_num, link in enumerate(footer['social_links'], start=1):
               <li class="nav-colophon-0${item_num}">
@@ -116,14 +116,14 @@
               </li>
               % endfor
           </ol>
-        </nav>
+        </nav-->
 
         % if context.get('include_language_selector', footer_language_selector_is_enabled()):
             <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>
         % endif
 
         
-        <div class="colophon">
+        <!-- div class="colophon">
 
         ## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
           <p class="copyright">${footer['copyright']}
@@ -145,7 +145,7 @@
             <li><a href="${footer['edx_org_link']['url']}">${footer['edx_org_link']['text']}</a></li>
           </ul>
         </nav>
-      </div>
+      </div-->
 
       ## Please leave this link and use one of the logos provided
       ## The OpenEdX link may be hidden when this view is served
