@@ -54,7 +54,7 @@
       line-height: normal;
       font-weight: 300;
       font-family: inherit;
-      color: $blue;
+      color: $very_dark_magenta;
     }
   }
   &.image-wrapper{
@@ -101,10 +101,16 @@
   .intro-inner-wrapper {
     border: 0px;
 
-      .intro .main-cta{
-        strong, a.find-courses, a.register,  a.add-to-cart{
-          border-radius: 5px;
-      }
+      .intro {
+        .main-cta{
+          strong, a.find-courses, a.register,  a.add-to-cart{
+            border-radius: 5px;
+        }
+
+        .heading-group h1 {
+          color: $very_dark_magenta;
+        }
+      } 
     }
   } 
 }
