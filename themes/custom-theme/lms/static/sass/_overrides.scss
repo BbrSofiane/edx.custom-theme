@@ -47,7 +47,7 @@
     span{
       display: inline-block;
       padding: .2em 0;
-      color: $blue;
+      color: $very_dark_magenta;
     }
     h3{
       font-size: 25px;
@@ -108,7 +108,7 @@
         }
 
         .heading-group h1 {
-          color: $very_dark_magenta;
+          color: $very_dark_magenta !important;
         }
       } 
     }
