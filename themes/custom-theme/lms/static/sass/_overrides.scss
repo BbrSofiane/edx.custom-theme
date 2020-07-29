@@ -33,7 +33,7 @@
 
   .header-col{
   &.text-wrapper{
-    font-family: "Rubik", Sans-serif !important;
+    //font-family: "Rubik", Sans-serif !important;
     flex: 1;
     margin: auto;
     h1{
@@ -117,7 +117,7 @@
   }
 
   .details {
-    font-family: "Quicksand", Sans-serif;
+    font-family: inherit;
   }
 }
 
@@ -319,4 +319,5 @@ border:0;
 
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
  color: $very_dark_magenta;
+ font-family: inherit;
 }
