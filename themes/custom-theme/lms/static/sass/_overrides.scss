@@ -16,79 +16,92 @@
   }
 }
 
- .home > header {
-    max-width: 1376px;
-    margin: auto;
-    background-color: transparent;
-   background-size: cover;
-   box-shadow: none;
-.header-row{
-  width: 100%;
-  display: flex;
-  @media only screen and (max-width: 600px) {
-    flex-direction: column-reverse;
+.home > header {
+  max-width: 1376px;
+  margin: auto;
+  background-color: transparent;
+  background-size: cover;
+  box-shadow: none;
+
+  .header-row{
+    width: 100%;
+    display: flex;
+    @media only screen and (max-width: 600px) {
+      flex-direction: column-reverse;
+    }
   }
-}
-.header-col{
- &.text-wrapper{
-  font-family: "Rubik", Sans-serif !important;
-  flex: 1;
-   margin: auto;
-   h1{
-     text-align: left !important;
-     font-family: "Quicksand", Sans-serif;
-     font-size: 45px !important;
-     letter-spacing: -2.6px !important;
-     font-weight: 600 !important;
-   }
-   span{
-    display: inline-block;
-    padding: .2em 0;
-    color: $blue;
-   }
-   h3{
-     font-size: 25px;
-    line-height: normal;
-    font-weight: 300;
-    font-family: inherit;
-    color: $blue;
-   }
- }
- &.image-wrapper{
-   flex: 2 0 0%;
- }
-}
+
+  .header-col{
+  &.text-wrapper{
+    font-family: "Rubik", Sans-serif !important;
+    flex: 1;
+    margin: auto;
+    h1{
+      text-align: left !important;
+      font-family: "Quicksand", Sans-serif;
+      font-size: 45px !important;
+      letter-spacing: -2.6px !important;
+      font-weight: 600 !important;
+    }
+    span{
+      display: inline-block;
+      padding: .2em 0;
+      color: $blue;
+    }
+    h3{
+      font-size: 25px;
+      line-height: normal;
+      font-weight: 300;
+      font-family: inherit;
+      color: $blue;
+    }
+  }
+  &.image-wrapper{
+    flex: 2 0 0%;
+  }
+  }
  .header-image{
 //   // background: url("../images/Classroom.png");
 //   background-size: cover;
 //   background-position: center;
 //   height: 100%;
-img{
-  max-width: 100%;
-  height: auto;
-}
- }
- }
- @media (max-width: 991px){
-.mobile-menu .mobile-nav-link a {
-  color: $vivid_cerise;
-  font: inherit;
-}
-.global-header .hamburger-menu{
-  &:focus{
-    outline: none;
+    img{
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
-.course-search{
-  margin: 20px 2px 0 20px !important;
-}
+
+@media (max-width: 991px) {
+  .mobile-menu .mobile-nav-link a {
+    color: $vivid_cerise;
+    font: inherit;
+  }
+
+  .global-header .hamburger-menu{
+    &:focus{
+      outline: none;
+    }
+  }
+
+  .course-search{
+    margin: 20px 2px 0 20px !important;
+  }
 }
 
-// SB 09/04/2020
-// Added to fix an issue with the UI https://www.notion.so/diceytech/38d7134cd22149bab2c29afbe0b5279c
-.course-info header.course-profile {
+
+.course-info {
+  header.course-profile {
+  // SB 09/04/2020
+  // Added to fix an issue with the UI https://www.notion.so/diceytech/38d7134cd22149bab2c29afbe0b5279c
   height: 100%;
   padding-top: 0px;
+  border-bottom: 0px;
+  
+  .intro-inner-wrapper {
+      border: 0px; 
+    }
+  } 
 }
 
 .login-register .action-primary {
@@ -284,5 +297,5 @@ border:0;
   .hamburger-menu{
   left: auto;
   right: 20px;
-}
+ }
 }
