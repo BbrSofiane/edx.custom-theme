@@ -98,12 +98,12 @@
   border-bottom: 0px;
   
   .intro-inner-wrapper {
-      border: 0px; 
-  }
+      border: 0px;
 
-  .intro .main-cta strong {
-    border-radius: 5px !important;
-  }
+      .intro .main-cta strong {
+        border-radius: 5px;
+      }
+  } 
 }
 
 .login-register .action-primary {
