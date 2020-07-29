@@ -99,11 +99,13 @@
   border-bottom: 0px;
   
   .intro-inner-wrapper {
-      border: 0px;
+    border: 0px;
 
-      .intro .main-cta strong {
-        border-radius: 5px;
+      .intro .main-cta{
+        strong, a.find-courses, a.register,  a.add-to-cart{
+          border-radius: 5px;
       }
+    }
   } 
 }
 
