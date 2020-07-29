@@ -42,6 +42,7 @@
       font-size: 45px !important;
       letter-spacing: -2.6px !important;
       font-weight: 600 !important;
+      color: $very_dark_magenta;
     }
     span{
       display: inline-block;
@@ -300,4 +301,8 @@ border:0;
   left: auto;
   right: 20px;
  }
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+ color: $very_dark_magenta;
 }
