@@ -32,34 +32,30 @@
   }
 
   .header-col{
-  &.text-wrapper{
-    //font-family: "Rubik", Sans-serif !important;
-    flex: 1;
-    margin: auto;
-    h1{
-      text-align: left !important;
-      font-family: "Quicksand", Sans-serif;
-      font-size: 45px !important;
-      letter-spacing: -2.6px !important;
-      font-weight: 600 !important;
-      //color: $very_dark_magenta;
+    padding-left: 10px;
+    &.text-wrapper{
+      flex: 1;
+      margin: auto;
+      h1{
+        font-family: "Quicksand", Sans-serif;
+        font-size: 45px;
+        letter-spacing: -2.6px;
+        font-weight: 600;
+      }
+      span{
+        display: inline-block;
+        padding: .2em 0;
+      }
+      h3{
+        font-size: 25px;
+        line-height: normal;
+        font-weight: 300;
+        font-family: inherit;
+      }
     }
-    span{
-      display: inline-block;
-      padding: .2em 0;
-      //color: $very_dark_magenta;
+    &.image-wrapper{
+      flex: 2 0 0%;
     }
-    h3{
-      font-size: 25px;
-      line-height: normal;
-      font-weight: 300;
-      font-family: inherit;
-      //color: $very_dark_magenta;
-    }
-  }
-  &.image-wrapper{
-    flex: 2 0 0%;
-  }
   }
  .header-image{
 //   // background: url("../images/Classroom.png");

@@ -19,22 +19,15 @@ from openedx.core.djangolib.markup import HTML, Text
     <header>
       <div class="header-row">
         <div class="header-col text-wrapper font-dark-magenta">
-          <h1> <span>Bringing</span>
-            <div class="slidingVertical">
-              <span class="font-cerise">Industry 4.0</span>
-              <span class="font-cerise">Automotive</span>
-              <span class="font-cerise">Aerospace</span>
-              <span class="font-cerise">Rail</span>
-              <span class="font-cerise">Healthcare</span>
-              <span class="font-cerise">Manufacturing</span>
-            </div>
-            <span> to Life in Education</span>
+          <img src="${static.url("custom-theme/images/3ducateLogo.svg")}" alt="3Ducate Logo" />
+          <h1> 
+            <span>The Home of Project Based Learning</span>
           </h1>
           <h3>Build skills for tomorrow by making the things you are curious about today.</h3>
         </div>
         <div class="header-col image-wrapper">
           <div class="header-image">
-            <img class="" src="${static.url("custom-theme/images/3DUCATE-hero-banner_transparent_background.png")}" alt="${_(" {platform_name} Home Page").format(platform_name=static.get_platform_name())}" />
+            <img src="${static.url("custom-theme/images/3DUCATE-hero-banner_transparent_background.png")}" alt="${_(" {platform_name} Home Page").format(platform_name=static.get_platform_name())}" />
           </div>
         </div>
       </div>
