@@ -98,9 +98,15 @@
   }
 }
 
-.courses-container .courses .course .course-info {
-  height: 100px;
-}
+.courses-container .courses .course{
+  .course-info {
+    height: 100px;
+  }
+
+  .course-image .cover-image {
+    height: 260px;
+  }
+} 
 
 .course-info {
 
