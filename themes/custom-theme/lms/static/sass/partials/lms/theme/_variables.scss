@@ -20,7 +20,7 @@ $component-active-bg: $pale_violet;
 $border-color: $usc_gold;
 
 // Theme fonts
-$font-family-sans-serif: 'Quicksand', sans-serif !important;
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Quicksand",sans-serif,"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $font-weight-normal: 600;
 
 $indigo: $vivid_cerise;
@@ -33,6 +33,9 @@ $indigo: $vivid_cerise;
 }
 .d-none{
     display: none;
+}
+.font-dark-magenta{
+    color: $very_dark_magenta;
 }
 // Initialize the Open edX Bootstrap theme
 @import "edx-bootstrap/sass/open-edx/theme";
