@@ -103,8 +103,20 @@
     height: 100px;
   }
 
-  .course-image .cover-image {
-    height: 260px;
+  .course-image{
+    .cover-image::before {
+      background-color: $dark_cyan;
+      height: 260px;
+    }
+
+    .cover-image {
+      height: 260px;
+
+      .learn-more{
+        border-radius: 5px;
+        top: 105px;
+      }
+    }
   }
 } 
 
