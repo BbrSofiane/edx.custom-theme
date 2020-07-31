@@ -2,6 +2,11 @@
   margin: auto;
 }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $very_dark_magenta;
+  font-family: inherit;
+ }
+
 .global-header {
   border-bottom: 0px solid $vivid_cerise;
   box-shadow: inset 0 0px 0px 0 rgba(0, 0, 0, 0.1);
@@ -337,7 +342,7 @@
 //}
 // mobile-css
 
-.global-header {
+.global-header{
   @media (max-width: 991px){
     display: block;
   }
@@ -347,7 +352,14 @@
  }
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
- color: $very_dark_magenta;
- font-family: inherit;
+.dashboard .main-container .my-courses .course .details .enter-course{
+  background-color: $vivid_cerise;
+  border: none;
+  color: $white;
+
+  &:hover{
+    background-color: $usc_gold;
+    border: none;
+    color: $vivid_cerise;
+  }
 }
