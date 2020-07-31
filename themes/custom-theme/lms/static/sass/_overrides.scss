@@ -99,18 +99,29 @@
 }
 
 .courses-container .courses .course{
+  border:0;
+  border-bottom: 1px solid $usc_gold;
+  box-shadow: 0px 10px 26px -18px rgba($usc_gold,1);
+  
+  &:hover{
+    background: $white;
+    border: 0;
+    box-shadow: 0 1px 4px 0 rgba($usc_gold,0.4);
+  }
+
   .course-info {
     height: 100px;
   }
 
   .course-image{
-    .cover-image::before {
-      background-color: $dark_cyan;
-      height: 260px;
-    }
 
     .cover-image {
       height: 260px;
+      
+      &::before {
+        background-color: $dark_cyan;
+        height: 260px;
+      }
 
       .learn-more{
         border-radius: 5px;
@@ -155,18 +166,7 @@
   background: $vivid_cerise;
 }
 
-.courses-container .courses .course {
-border:0;
-   border-bottom: 1px solid $bright_turquoise;
-  box-shadow: 0px 10px 26px -18px rgba($bright_turquoise,1);
-  &:hover{
-      background: $white;
-      border: 0;
-      box-shadow: 0 1px 4px 0 rgba($bright_turquoise,0.4);
-  }
 
-
-}
 .wrapper-footer{
   box-shadow: none;
     border-top: none;
