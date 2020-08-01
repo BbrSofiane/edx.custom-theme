@@ -225,6 +225,16 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
             border-bottom: 2px solid $secondary;
           }
         }
+
+        .nav-tab a {
+          font-weight: 700;
+          &:hover,
+          &:focus,
+          &:active{
+            color: $usc_gold;
+            border-bottom: 2px solid $secondary;
+          }
+        }
       }
     }
   }
