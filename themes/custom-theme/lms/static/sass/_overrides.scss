@@ -15,8 +15,8 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     margin: 20px 0 0 0px;
     
     .search-button {
-      color: $bright_turquoise;
-      background: $vivid_cerise;
+      color: $secondary;
+      background: $primary;
     }
   }
 }
@@ -216,17 +216,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
         flex: 1;
         //justify-content: space-between;
         //margin: 0px 0 0 0px;
-        a{
-          font-weight: 700;
-          &:hover,
-          &:focus,
-          &:active{
-            color: $usc_gold;
-            border-bottom: 2px solid $secondary;
-          }
-        }
-
-        .nav-tab a {
+        .nav-tab a, a{
           font-weight: 700;
           &:hover,
           &:focus,
