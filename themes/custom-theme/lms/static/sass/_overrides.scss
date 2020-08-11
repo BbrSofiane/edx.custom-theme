@@ -196,7 +196,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .global-header{
-  display:flex;
+  display:flex !default;
   width:100%;
   
   .header-logo{
@@ -377,8 +377,4 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     border: none;
     color: $vivid_cerise;
   }
-}
-
-.global-header .nav-links .main .nav-tab a:hover {
-  
 }
