@@ -196,12 +196,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 }
 
 .global-header{
-  display:flex !default;
+  display:flex !important;
   width:100%;
   
   .header-logo{
     margin-bottom: 0;
-    display: flex !default;
   }
   
   .main-header{
@@ -360,7 +359,7 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .global-header{
   @media (max-width: 991px){
-    display: flex;
+    display: block;
   }
   .hamburger-menu{
   left: auto;
