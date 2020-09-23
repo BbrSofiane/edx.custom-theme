@@ -1,1 +1,3 @@
 # edx.custom-theme
+
+test
